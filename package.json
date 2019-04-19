@@ -2,9 +2,9 @@
   "name": "crimeboard",
   "version": "0.0.1",
   "description": "",
-  "main": "server/index.js",
+  "main": "src/server/index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node src/server/index.js",
     "test": "echo \"No tests yet\""
   },
   "repository": {
