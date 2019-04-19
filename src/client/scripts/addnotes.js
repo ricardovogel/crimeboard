@@ -16,6 +16,5 @@ function addNote() {
 
 function edittext(noteNumber) {
     let text = prompt("Enter your text", document.getElementById(`text-${noteNumber}`).innerHTML);
-    text = text.replace(/[.*+?^${}<>()|[\]\\]/g, '\\$&');
     document.getElementById(`text-${noteNumber}`).innerHTML = text;
 }
