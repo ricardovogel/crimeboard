@@ -1,13 +1,3 @@
-class Note {
-    constructor(id, text) {
-        this.id = id;
-        this.text = text;
-        this.style = `transform: translate(5px, -5px);`;
-        this.data_x = "5px";
-        this.data_y = "-5px";
-    }
-}
-
 Vue.component('note', {
     props: ['note'],
     template: `<div class="note" :id="note.id" :style="note.style" :data-x="note.data_x" :data-y="note.data_y">
