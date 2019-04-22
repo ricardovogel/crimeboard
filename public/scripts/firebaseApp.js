@@ -1,5 +1,6 @@
 window.onload = function () {
     db = firebase.firestore();
+    storage = firebase.storage();
 
     firebase.auth().onAuthStateChanged(function (user) {
         if (user === null) {
@@ -10,6 +11,7 @@ window.onload = function () {
 
         db.collection("userNotes").doc(app.user.uid).get().then(doc => {
             app.notes = JSON.parse(doc.data().notes);
+            app.imgnotes = JSON.parse(doc.data().imgnotes);
         });
     });
 };
@@ -17,7 +19,8 @@ window.onload = function () {
 
 function saveState() {
     db.collection("userNotes").doc(app.user.uid).set({
-        notes: JSON.stringify(app.notes)
+        notes: JSON.stringify(app.notes),
+        imgnotes: JSON.stringify(app.imgnotes)
     }).then(function () {
         console.log(":D")
     }).catch(function () {
