@@ -12,6 +12,8 @@ function dragMoveListener(event) {
     // update the posiion attributes
     target.setAttribute('data-x', x);
     target.setAttribute('data-y', y);
+
+    updateStyle(target, x, y);
 }
 
 // this is used later in the resizing and gesture demos
@@ -75,4 +77,11 @@ interact('.note')
         target.setAttribute('data-x', x);
         target.setAttribute('data-y', y);
         // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
+        updateStyle(target, x, y);
     });
+
+function updateStyle(target, x, y) {
+    app.notes[target.id].style = target.style.cssText;
+    app.notes[target.id].data_x = x;
+    app.notes[target.id].data_y = y;
+}
