@@ -11,7 +11,7 @@ class Note {
 class Imgnote {
     constructor(id, imageURL, style, data_x, data_y) {
         this.id = "i-" + id;
-        imageURL = imageURL || "https://ih0.redbubble.net/image.562324831.7631/flat,550x550,075,f.u3.jpg";
+        imageURL = imageURL || "";
         this.style = style || `transform: translate(5px, -5px); background-image:url(${imageURL})`;
         this.data_x = data_x || "5px";
         this.data_y = data_y || "-5px";
