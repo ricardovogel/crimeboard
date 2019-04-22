@@ -32,6 +32,13 @@
   right: 10px;
 }
 
+.delete-icon {
+  color:grey;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+}
+
 .pin {
   height: 25px;
   width: 25px;
