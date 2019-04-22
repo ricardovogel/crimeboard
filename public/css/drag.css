@@ -46,3 +46,11 @@
   align-items: center;
 
 }
+
+body {
+  padding-top: 1rem;
+}
+.main-area {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
