@@ -32,7 +32,7 @@ function signup() {
 
 function login() {
     let email = document.getElementById("inputEmail").value;
-    let password = document.guetElementById("inputPassword").value;
+    let password = document.getElementById("inputPassword").value;
     console.log(email)
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function () {
