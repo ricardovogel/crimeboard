@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <script src="scripts/sweetalert2.all.min.js"></script>
+
   <link rel="stylesheet" href="css/drag.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -32,8 +34,10 @@
       <div class="main-area">
         <div id="crimeboard" class="resize-container">
           <note v-for="note in notes" v-bind:note="note" v-bind:key="note.id"></note>
+          <imgnote v-for="imgnote in imgnotes" v-bind:imgnote="imgnote" v-bind:key="imgnote.id"></imgNote>
         </div>
         <button onclick="addNote()">add note</button>
+        <button onclick="addImgNote()">add image note</button>
         <button onclick="saveState()">save</button>
         <button onclick="clearBoard()">clear board</button>
         <button onclick="logOut()">log out</button>
