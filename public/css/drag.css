@@ -58,6 +58,7 @@ html, body {
   display: inline-block;
   width: 1000px;
   height: 600px;
+  border-radius: 8px;
   background-color: antiquewhite;
 }
 
