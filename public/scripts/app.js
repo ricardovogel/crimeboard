@@ -155,7 +155,7 @@ function uploadImage(noteID) {
     let noteNumber = noteID.split("-")[1] || noteID;
     Swal.fire({
         title: 'Upload picture',
-        html: `Your crimeboard will be saved after uploading.<input id="image-file" type="file" >`,
+        html: `Your crimeboard will be saved after uploading.<input id="image-file" type="file" accept="image/*" >`,
         type: 'question',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
