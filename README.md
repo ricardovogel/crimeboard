@@ -3,4 +3,4 @@
 Web application to solve serious crimes. Add notes and pictures to the crime board, and connect them with yarn.  
 
 
-&copy; Ricardo Vogel - 2019
+&copy; Ricardo Vogel - 2020
